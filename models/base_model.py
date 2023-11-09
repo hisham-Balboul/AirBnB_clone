@@ -42,5 +42,5 @@ class BaseModel:
 
     def __str__(self):
         """Return the str representation of the BaseModel instance"""
-        cname = elf.__class__.__name__
+        cname = self.__class__.__name__
         return "[{}] ({}) {}".format(cname, self.id, self.__dict__)
